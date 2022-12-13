@@ -1,0 +1,94 @@
+/* Код для подключения шрифта в /css/style.css */
+@font-face {
+    font-family: "GothamProLight";
+    src: url("../fonts/GothamProLight/GothamProLight.eot");
+    src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+    url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+/* Код для подключения шрифта в /css/style.css */
+@font-face {
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Код для подключения шрифта в /css/stylename.css */
+@font-face {
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+    url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Код для подключения шрифта в /css/stylename.css */
+@font-face {
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "MullerBold";
+    src: url("../fonts/MullerBold/MullerBold.eot");
+    src: url("../fonts/MullerBold/MullerBold.eot")format("embedded-opentype"),
+    url("../fonts/MullerBold/MullerBold.woff") format("woff"),
+    url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container {
+    width: 100%;
+    max-width: 952px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 16px;
+}
+/* Header */
+.header-style {
+    display: flex;
+}
+
+.image-block1 {
+    height: 52px;
+    width: 157px;
+}
+
+.header-block2 {
+    background: #FFFFFF;
+    border-left: 2px solid #010101;
+    padding: 10px 9px;
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 4px;
+    border-color: #009FE3;
+}
+
+.header-block3 {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+    vertical-align: middle;
+    color: #009FE3;
+    padding-top: 15px;
+    line-height: 17px;
+}
+
