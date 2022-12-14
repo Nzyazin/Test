@@ -63,9 +63,6 @@
     }
 
     /* Header */
-    .header-style {
-        width: 1100px;
-    }
 
     .image-block1 {
         height: 52px;
@@ -117,8 +114,102 @@
 
 /* Header */
 
+/* Navbar */
 .navbar-nav {
     display: flex;
+    padding-top: 14px;
+    padding-left: 6px;
+    align-items: center;
+    width: 100%;
+    flex-flow: row nowrap;
+}
+
+.navbar-nav li a {
+    padding-right: 30px;
+    font-family: 'GothamProRegular', sans-serif;
+    font-size: 14px;
+    color: #1A191C;
+    text-decoration: none;
+}
+
+.nav-link {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#Med {
+    padding-left: 14px;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.show {
+    display:block;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown-toggle .dropdown-menu {display: block;}
+
+
+.dropdown-toggle {
+    width: 6px;
+    height: 6px;
+    transform: rotate(135deg);
+    border-right: 1px solid #B1B1B1;
+    border-top: 1px solid #B1B1B1;
+    display: inline;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 7px;
+}
+
+.header-style {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 90% 25%;
+}
+
+.header-style2 {
+    margin-top: 12px;
+    margin-left: 8px;
+}
+
+.header-style2 h1{
+    font-family: 'GothamProRegular', sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.header-style2 h2 {
+    font-family: 'GothamProBold', sans-serif;
+    font-size: 19px;
+    font-weight: bolder;
+    margin-top: 9px;
+}
+.concrDiv {
+    padding-top: 18px;
+}
+
+.header-style2 div a{
+    font-family: 'GothamProRegular', sans-serif;
+    font-size: 14px;
+
 }
 
 .header-main1 {
@@ -148,7 +239,6 @@
     font-family: 'Akshar', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    text-align: left;
     vertical-align: middle;
     color: #009FE3;
     padding-top: 18px;
