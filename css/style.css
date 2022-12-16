@@ -460,19 +460,26 @@
     width: 100%;
 }
 
+.mini_container {
+    display: flex;
+    width: 100%;
+    margin: 12px 10px 12px 10px;
+}
+
 .item2_content {
     max-width: 100%;
     width: 100%;
+    margin: 0 21px;
 }
 
 .content_steps {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #E8E8E8;
-    margin: 12px 21px;
     padding-bottom: 9px;
     padding-right: 3px;
     padding-left: 3px;
+    margin-top: 12px;
     font-family: 'GothamPro', sans-serif;
     font-size: 14px;
     line-height: 13px;
@@ -480,8 +487,7 @@
 
 .content_questions {
     display: flex;
-    margin: 21px 21px;
-    vertical-align: center;
+    margin-top: 21px;
 }
 
 .circle {
@@ -499,7 +505,7 @@
     margin-top: 6px;
     margin-left: 7px;
     font-family: 'GothamPro', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 27px;
 }
 
@@ -514,6 +520,64 @@
 .item4 {
     color: #C4C4C4;
 }
+
+.content_forms {
+    display: flex;
+    margin-top: 21px;
+    position: relative;
+}
+
+.content_forms textarea {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    border: 1px solid #D5D5D5;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-top: 9px;
+    font-size: 15px;
+}
+
+.placeholder {
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 8px;
+    transition: 0.3s;
+    pointer-events: none;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: black;
+    padding-top: 1px;
+    padding-left: 3px;
+}
+
+.content_buttons {
+    margin-top: 21px;
+    display: flex;
+    justify-content: end;
+}
+.content_buttons button {
+    background: #009FE3;
+    border-radius: 6px;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'GothamPro', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    width: 18%;
+    height: 33px;
+}
+
+/* Arrow */
+
+
+
 
 
 
