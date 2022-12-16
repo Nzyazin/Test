@@ -7,28 +7,31 @@
     <title>Title</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header class="header-style">
-            <div class="header-style1">
-                <div class="header-main1">
-                    <div class="header-block1"><img class="image-block1" src="img/image 21.png"></div>
-                    <div class="header-block2"></div>
-                    <div class="header-block3">Медицинские профосмотры <br>в Москве и области</div>
-                </div>
-                <div class="header-main2">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="header">
+        <div class="container">
+            <header class="header-style">
+                <div class="header-style1">
+                    <div class="header-main1">
+                        <div class="header-block1"><img class="image-block1" src="img/image 21.png"></div>
+                        <div class="header-block2"></div>
+                        <div class="header-block3">Медицинские профосмотры <br>в Москве и области</div>
+                    </div>
+                    <div class="header-main2">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#">Подбор профосмотра <span class="sr-only"></span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn" href="#" id="btn">
                                         Услуги
-                                        <div class="dropdown-toggle" id="dropdown-toggle"></div>
-                                    </a>
-                                    <div class="dropdown-menu active" id="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <iconify-icon id="arrow" icon="bx:chevron-down" style="color: #b1b1b1; border: 1px; margin-left: -6px;" width="24"; height=24";></iconify-icon>
+                                    </button>
+                                    <div class="dropdown" id="dropdown" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#">Предварительные и периодические медицинские осмотры (профосмотры)</a>
                                         <a class="dropdown-item" href="#">Личные медицинские книжки (ЛМК)</a>
                                         <a class="dropdown-item" href="#">Психиатрическое освидетельствование</a>
@@ -59,24 +62,88 @@
                                     <a class="nav-link" href="#">Контакты</a>
                                 </li>
                             </ul>
-                    </nav>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-style2">
+                    <div class="style2">
+                        <h1 class="h1_title"><strong>prof@dlamed.group</strong></h1>
+                        <h2 class="h2_title">+7 (495) 381 53 33</h2>
+                        <div class="concrDiv">
+                            Ваш город: <div><a style="color: #009FE3";>Королев</a></div>
+                            <iconify-icon id="arrow1" icon="bx:chevron-down" style="color: #009FE3; border: 1px; margin-left: -6px;" width="24"; height=24";></iconify-icon>
+                        </div>
+                    </div>
+
+
+                </div>
+            </header>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="container">
+            <div class="center_content">
+                <div class="pre_girl">
+                    <div class="pre_girl_text">
+                        <div class="pre_girl_text_title">
+                            <h1>Проведение профосмотров от 600 руб./чел.</h1>
+                            <p>с выездом в вашу организацию</p>
+                        </div>
+
+                    </div>
+                    <div class="pre_girl_icons">
+                        <div class="item">
+                            <div class="item_img">
+                                <img style="width: 45px; margin-right: -7px; margin-left: -3px;"  alt="" src="img/Group.png">
+                            </div>
+                            <div>
+                                Сделаем за вас все: от подбора типа профосмотра до выдачи всех документов
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img alt="" src="img/Frame.png">
+                            </div>
+                            <div>
+                                Работаем строго по 302н Приказу Минздравсоцразвития
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img alt="" src="img/Group%2031.png">
+                            </div>
+                            <div>
+                                Результаты профосмотра всего за 7 дней
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="girl">
+                    <div class="girlImg">
+                        <img src="img/girl%202.png">
+                    </div>
+
+                </div>
+                <div class="post_girl">
+                    <div class="post_text">
+                        Оставьте заявку, и мы предоставим полный план профосмотра с расчетом итоговой стоимости, подходящей именно вашей организации
+                        <input placeholder="Ваше номер телефона*">
+                        <button>Получить коммерческое предложение</button>
+                        <div class="confed">
+                            Передавая информацию сайту, вы принимаете условия
+                            <p style="color: #009FE3; ">Политика защиты персональной информации</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="header-style2">
-                <h1><strong>prof@dlamed.group</strong></h1>
-                <h2>+7 (495) 381 53 33</h2>
-                <div class="concrDiv">
-                    <a>Ваш город:</a> <a style="color: #009FE3">Королев</a>
-                    <div class="dropdown-toggle" style="border-color: #009FE3"></div>
-                </div>
 
-            </div>
+        </div>
 
 
-        </header>
+    </section>
 
-    </div>
 
-<script src="javascript.js"></script>
+<script src="js/javascript.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
 </html>
