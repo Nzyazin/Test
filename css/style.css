@@ -320,7 +320,39 @@
     width: 36px;
 }
 
+/* Placeholder */
 
+.span_holder span {color: #E4373D;}
+.text_input {
+    position: relative;
+    z-index: 4;
+}
+.span_holder {
+    position: absolute;
+    left: 12px; top: 27px;
+    z-index: -1;
+    font-family: 'GothamPro', sans-serif;
+    line-height: 13.68px;
+    font-size: 13px;
+    color: #1A191C;
+}
+
+.second {
+    left: 198px; top: 15px;
+    color: #838383;
+}
+
+.holder {
+    background-color: transparent;
+    border: 1px solid #123;
+    outline: none;
+}
+
+.holder:focus ~ .span_holder{
+    color: #999;
+}
+
+/* Girl content */
 
 .pre_girl {
     margin-left: 50px;
@@ -349,7 +381,7 @@
 
 .girl {
     flex: 1;
-    z-index: 111;
+    z-index: 3;
 }
 
 .girlImg {
@@ -364,6 +396,7 @@
     background-repeat: no-repeat;
     margin-top: 10px;
     margin-left: -100px;
+    z-index:3;
 }
 
 .post_text {
@@ -466,6 +499,7 @@
     display: flex;
     animation-name: fade;
     animation-duration: 1.5s;
+    width: 100%;
 }
 
 .content_steps {
@@ -542,9 +576,10 @@
 
 .content_forms1 {
     display: inline-flex;
-    margin-top: 12px;
     font-size: 14px;
     flex-grow: 2;
+    font-family: 'GothamPro', sans-serif;
+    line-height: 13.68px;
 }
 
 .content_forms1 div {
@@ -589,6 +624,60 @@
     width: 100%;
     margin: 12px 21px;
     height: 360px;
+}
+
+.mini_container h1 {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    padding-top: 63px;
+    display: flex;
+    width: 81%;
+    margin: 0 auto;
+    font-weight: 500;
+    color: #1A191C;
+}
+
+.post_text1 {
+    font-family: 'GothamPro' , sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 42px;
+    padding-left: 24px;
+    padding-right: 24px;
+    line-height: 20.1px;
+    color: #1A191C;
+    flex-grow: 3;
+}
+
+.post_text1 input {
+    padding: 13px 13px;
+    max-width: 100%;
+    width: 51%;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #D5D5D5;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.post_text1 button {
+    width: 54.4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    height: 45px;
+    border: 1px solid #D5D5D5;
+    border-radius: 6px;
+    background: #009FE3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 19px;
 }
 
 .content_buttons {
@@ -705,7 +794,30 @@
 }
 
 
-
+/*BUBU*/
+.bubuholder span {color: red;}
+.mama {
+    position: relative;
+    margin: 5px;
+    height: 25px;
+}
+.bubuholder {
+    position: absolute;
+    left: 5px; top: 2px;
+    z-index: -1;
+}
+.bubu {
+    position: absolute;
+    background-color: transparent;
+    outline: none;
+    height: 22px;
+    border: 1px solid #123;
+    padding: 2px 4px;
+    box-sizing: border-box;
+}
+.bubu:focus ~ .bubuholder{
+    color: #999;
+}
 
 
 

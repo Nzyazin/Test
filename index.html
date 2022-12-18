@@ -126,14 +126,20 @@
                 <div class="post_girl">
                     <div class="post_text">
                         Оставьте заявку, и мы предоставим полный план профосмотра с расчетом итоговой стоимости, подходящей именно вашей организации
-                        <input placeholder="Ваше номер телефона*">
+                        <div class="text_input">
+                            <input class="holder">
+                            <span class="span_holder">Ваш номер телефона<span>*</span></span>
+                        </div>
                         <button>Получить коммерческое предложение</button>
                         <div class="confed">
                             Передавая информацию сайту, вы принимаете условия
-                            <p style="color: #009FE3; ">Политика защиты персональной информации</p>
+                            <p style="color: #009FE3; cursor: pointer;">Политика защиты персональной информации</p>
                         </div>
                     </div>
+
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -145,95 +151,89 @@
             </div>
             <div class="section2_content">
                 <div class="сontent_item2">
-                        <div class="item2_img">
-                            <img style="width: 210px; min-height: 350px; height: 100%;"  alt="" src="img/Mask%20Group.jpg">
+                    <div class="item2_img">
+                        <img style="width: 210px; min-height: 350px; height: 100%;"  alt="" src="img/Mask%20Group.jpg">
+                    </div>
+                    <div class="mini_container">
+                        <div class="content_steps">
+                            <div class="step_item2 item1">Шаг 1</div>
+                            <div class="step_item2 item2">Шаг 2</div>
+                            <div class="step_item2 item3">Шаг 3</div>
+                            <div class="step_item2 item4">Шаг 4</div>
                         </div>
+                        <div class="content_questions">
+                            <div class="circle">
+                                1
+                            </div>
+                            <div  class="circle_div">Чем занимается ваша организация?</div>
+                        </div>
+                        <form class="content_forms">
+                            <textarea  class="textarea" type="text" class="input_style" placeholder="Введите ответ"></textarea>
+
+                        </form>
+                        <div class="content_buttons" style="justify-content: flex-end;">
+                            <button class="next" onclick="nextSlide()">Далее<img style="padding-left: 9px;" alt=""src="img/Group%204.1.png"/></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="сontent_item2">
                     <div class="item2_img">
                         <img style="width: 210px; min-height: 350px; height: 100%;"  alt="" src="img/Mask%20Group05.png">
+                    </div>
+                    <div class="mini_container">
+                        <div class="content_steps">
+                            <div class="step_item2 item1" style="color: #C4C4C4;">Шаг 1</div>
+                            <div class="step_item2 item2" style="color: #1A191C;">Шаг 2</div>
+                            <div class="step_item2 item3">Шаг 3</div>
+                            <div class="step_item2 item4">Шаг 4</div>
+                        </div>
+                        <div class="content_questions">
+                            <div class="circle">
+                                2
+                            </div>
+                            <div  class="circle_div">Укажите вид необходимой услуги (Можно выбрать несколько вариантов)</div>
+                        </div>
+                        <form class="content_forms1">
+                            <div>
+                                <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                <label for="happy">Предварительный/периодический медицинский осмотр</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy1" name="happy" value="yes">
+                                <label for="happy1">Выездной медицинский осмотр (профосмотр)</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy2" name="happy" value="yes">
+                                <label for="happy2">Личные медицинские книжки (ЛМК)</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy3" name="happy" value="yes">
+                                <label for="happy3">Психиатрическое освидетельствование</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy4" name="happy" value="yes">
+                                <label for="happy4">Предрейсовые/послерейсовые профосмотры</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy5" name="happy" value="yes">
+                                <label for="happy5">Предсменные/послесменные профосмотры</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="custom-checkbox" id="happy6" name="happy" value="yes">
+                                <label for="happy6">Организация здравпункта на предприятии</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy7" name="happy" value="yes">
+                                <label for="happy7">Диспансеризация</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy8" name="happy" value="yes">
+                                <label for="happy8">Вакцинация</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy9" name="happy" value="yes">
+                                <label for="happy9">Помощь в организации аттестации рабочих мест (СОУТ)</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy10" name="happy" value="yes">
+                                <label for="happy10">Тендерный отдел</label>
+                                <input type="checkbox" class="custom-checkbox" id="happy11" name="happy" value="yes">
+                                <label for="happy11">Я не знаю, нужна помощь в подборе</label>
+                            </div>
+                        </form>
+                        <div class="content_buttons" style="justify-content: space-between; ">
+                            <button class="back" onclick="previousSlide()"><img style="padding-right: 9px;" alt=""src="img/Frame%2060.png"/>Назад</button>
+                            <button class="next" onclick="nextSlide()">Далее<img style="padding-left: 9px;" alt=""src="img/Group%204.1.png"/></button>
+                        </div>
                     </div>
                 </div>
                 <div class="сontent_item2">
                     <div class="item2_img">
                         <img style="width: 210px; min-height: 350px; height: 100%;"  alt="" src="img/Mask%20Group1.png">
                     </div>
-                </div>
-                <div class="сontent_item2">
-                    <div class="item2_img">
-                        <img style="width: 210px; min-height: 350px; height: 100%;"  alt="" src="img/Mask%20Group.png">
-                    </div>
-                </div>
-                <div class="mini_container">
-                    <div class="content_steps">
-                        <div class="step_item2 item1">Шаг 1</div>
-                        <div class="step_item2 item2">Шаг 2</div>
-                        <div class="step_item2 item3">Шаг 3</div>
-                        <div class="step_item2 item4">Шаг 4</div>
-                    </div>
-                    <div class="content_questions">
-                        <div class="circle">
-                            1
-                        </div>
-                        <div  class="circle_div">Чем занимается ваша организация?</div>
-                    </div>
-                    <form class="content_forms">
-                        <textarea  class="textarea" type="text" class="input_style" placeholder="Введите ответ"></textarea>
-
-                    </form>
-                    <div class="content_buttons" style="justify-content: flex-end;">
-                        <button class="next" onclick="nextSlide()">Далее<img style="padding-left: 9px;" alt=""src="img/Group%204.1.png"/></button>
-                    </div>
-                </div>
-                <div class="mini_container">
-                    <div class="content_steps">
-                        <div class="step_item2 item1" style="color: #C4C4C4;">Шаг 1</div>
-                        <div class="step_item2 item2" style="color: #1A191C;">Шаг 2</div>
-                        <div class="step_item2 item3">Шаг 3</div>
-                        <div class="step_item2 item4">Шаг 4</div>
-                    </div>
-                    <div class="content_questions">
-                        <div class="circle">
-                            2
-                        </div>
-                        <div  class="circle_div">Укажите вид необходимой услуги (Можно выбрать несколько вариантов)</div>
-                    </div>
-                    <form class="content_forms1">
-                        <div>
-                            <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
-                            <label for="happy">Предварительный/периодический медицинский осмотр</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy1" name="happy" value="yes">
-                            <label for="happy1">Выездной медицинский осмотр (профосмотр)</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy2" name="happy" value="yes">
-                            <label for="happy2">Личные медицинские книжки (ЛМК)</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy3" name="happy" value="yes">
-                            <label for="happy3">Психиатрическое освидетельствование</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy4" name="happy" value="yes">
-                            <label for="happy4">Предрейсовые/послерейсовые профосмотры</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy5" name="happy" value="yes">
-                            <label for="happy5">Предсменные/послесменные профосмотры</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" class="custom-checkbox" id="happy6" name="happy" value="yes">
-                            <label for="happy6">Организация здравпункта на предприятии</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy7" name="happy" value="yes">
-                            <label for="happy7">Диспансеризация</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy8" name="happy" value="yes">
-                            <label for="happy8">Вакцинация</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy9" name="happy" value="yes">
-                            <label for="happy9">Помощь в организации аттестации рабочих мест (СОУТ)</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy10" name="happy" value="yes">
-                            <label for="happy10">Тендерный отдел</label>
-                            <input type="checkbox" class="custom-checkbox" id="happy11" name="happy" value="yes">
-                            <label for="happy11">Я не знаю, нужна помощь в подборе</label>
-                        </div>
-                    </form>
-                    <div class="content_buttons" style="justify-content: space-between; ">
-                            <button class="back" onclick="previousSlide()"><img style="padding-right: 9px;" alt=""src="img/Frame%2060.png"/>Назад</button>
-                            <button class="next" onclick="nextSlide()">Далее<img style="padding-left: 9px;" alt=""src="img/Group%204.1.png"/></button>
-                        </div>
-                </div>
-                <div class="mini_container">
+                    <div class="mini_container">
                         <div class="content_steps">
                             <div class="step_item2 item1" style="color: #C4C4C4;">Шаг 1</div>
                             <div class="step_item2 item2" style="color: #C4C4C4;">Шаг 2</div>
@@ -254,29 +254,52 @@
                             <button class="back" onclick="previousSlide()"><img style="padding-right: 9px;" alt=""src="img/Frame%2060.png"/>Назад</button>
                             <button class="next"onclick="nextSlide()">Далее<img style="padding-left: 9px;" alt=""src="img/Group%204.1.png"/></button>
                         </div>
+                    </div>
                 </div>
-                <div class="mini_container">
-                    <div class="content_steps">
-                        <div class="step_item2 item1" style="color: #C4C4C4;">Шаг 1</div>
-                        <div class="step_item2 item2" style="color: #C4C4C4;">Шаг 2</div>
-                        <div class="step_item2 item3" style="color: #C4C4C4;">Шаг 3</div>
-                        <div class="step_item2 item4" style="color: #1A191C;">Шаг 4</div>
+
+                <div class="сontent_item2">
+                    <div class="item2_img">
+                        <img style="width: 210px; min-height: 350px; height: 100%;"  alt="" src="img/Mask%20Group.png">
                     </div>
-                    <div class="content_questions">
-                        <div class="circle">
-                            4
+                    <div class="mini_container">
+                        <div class="content_steps">
+                            <div class="step_item2 item1" style="color: #C4C4C4;">Шаг 1</div>
+                            <div class="step_item2 item2" style="color: #C4C4C4;">Шаг 2</div>
+                            <div class="step_item2 item3" style="color: #C4C4C4;">Шаг 3</div>
+                            <div class="step_item2 item4" style="color: #1A191C;">Шаг 4</div>
                         </div>
-                        <div  class="circle_div">Вы планируете пройти профосмотр в одном из наших медцентров или требуется выездная бригада?</div>
+                        <div class="content_questions">
+                            <div class="circle">
+                                4
+                            </div>
+                            <div  class="circle_div">Вы планируете пройти профосмотр в одном из наших медцентров или требуется выездная бригада?</div>
+                        </div>
+                        <form class="content_forms2">
+                            <input type="radio" class="custom-radio" id="happy13" name="happy" value="yes">
+                            <label style="margin-right: 12px;" for="happy13" >В медцентре</label>
+                            <input type="radio" class="custom-radio" id="happy14" name="happy" value="yes">
+                            <label for="happy14">Требуется выездная бригада</label>
+                        </form>
+                        <div class="content_buttons" style="justify-content: space-between;">
+                            <button class="back" onclick="previousSlide()"><img style="padding-right: 9px;" alt=""src="img/Frame%2060.png"/>Назад</button>
+                            <button class="next" onclick="nextSlide()">Далее<img style="padding-left: 9px;" alt=""src="img/Group%204.1.png"/></button>
+                        </div>
                     </div>
-                    <form class="content_forms2">
-                        <input type="radio" class="custom-radio" id="happy13" name="happy" value="yes">
-                        <label style="margin-right: 12px;" for="happy13" >В медцентре</label>
-                        <input type="radio" class="custom-radio" id="happy14" name="happy" value="yes">
-                        <label for="happy14">Требуется выездная бригада</label>
-                    </form>
-                    <div class="content_buttons" style="justify-content: space-between;">
-                        <button class="back" onclick="previousSlide()"><img style="padding-right: 9px;" alt=""src="img/Frame%2060.png"/>Назад</button>
-                        <button class="next">Далее<img style="padding-left: 9px;" alt=""src="img/Group%204.1.png"/></button>
+                </div>
+                <div class="сontent_item2">
+                    <div class="mini_container">
+                        <h1>Введите номер телефона, и мы вышлем вам расчет стоимости профосмотра и коммерческое предложение</h1>
+                        <div class="post_text1 second">
+                            <div class="text_input">
+                                <input class="holder" placeholder="">
+                                <span class="span_holder second">Ваш номер телефона<span>*</span></span>
+                            </div>
+                            <button>Получить коммерческое предложение</button>
+                            <div class="confed">
+                                Передавая информацию сайту, вы принимаете условия
+                                <p style="color: #009FE3; cursor: pointer;">Политика защиты персональной информации</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

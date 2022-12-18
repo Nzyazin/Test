@@ -46,9 +46,7 @@ function showSlides(n) {
     /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
     let cont_item2 = document.getElementsByClassName("сontent_item2");
     let min_cont = document.getElementsByClassName("mini_container");
-    let cont_buttons = document.getElementsByClassName("content_buttons");
     /* Проверяем количество item: */
-    console.log(cont_item2.length)
     if (n > cont_item2.length) {
         slideIndex = 1
     }
@@ -76,4 +74,14 @@ function showSlides(n) {
     }
     /* Делаем элемент flex: */
     cont_item2[slideIndex - 1].style.display = "flex";
+}
+
+/* Placeholder */
+let holder = document.querySelectorAll('.holder');
+let span_holder = document.querySelectorAll('.span_holder');
+
+for(let i = 0; i < holder.length; i++){
+    holder[i].addEventListener('input', function(){
+        span_holder[i].style.display = ( this.value == "" ) ? 'inline' : 'none';
+    });
 }
