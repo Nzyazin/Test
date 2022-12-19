@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
-    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="./css/reset.css">
@@ -11,77 +11,160 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <header class="header-style">
-                <div class="header-style1">
-                    <div class="header-main1">
-                        <div class="header-block1"><img class="image-block1" src="img/image 21.png"></div>
-                        <div class="header-block2"></div>
-                        <div class="header-block3">Медицинские профосмотры <br>в Москве и области</div>
-                    </div>
-                    <div class="header-main2">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Подбор профосмотра <span class="sr-only"></span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <button class="btn" href="#" id="btn">
-                                        Услуги
-                                        <iconify-icon id="arrow" icon="bx:chevron-down" style="color: #b1b1b1; border: 1px; margin-left: -6px;" width="24"; height=24";></iconify-icon>
-                                    </button>
-                                    <div class="dropdown" id="dropdown" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Предварительные и периодические медицинские осмотры (профосмотры)</a>
-                                        <a class="dropdown-item" href="#">Личные медицинские книжки (ЛМК)</a>
-                                        <a class="dropdown-item" href="#">Психиатрическое освидетельствование</a>
-                                        <a class="dropdown-item" href="#">Предрейсовые/послерейсовые медицинские осмотры</a>
-                                        <a class="dropdown-item" href="#">Предсменные/послесменные медицинские осмотры</a>
-                                        <a class="dropdown-item" href="#">Организация здравпункта на предприятии</a>
-                                        <a class="dropdown-item" href="#">Диспансеризация</a>
-                                        <a class="dropdown-item" href="#">Вакцинация</a>
-                                        <a class="dropdown-item" href="#">Помощь в организации аттестации рабочих мест (СОУТ)</a>
-                                        <a class="dropdown-item" href="#">Тендерный отдел</a>
-                                        <div class="dropdown-divider"></div>
-                                    </div>
-                                </li>
-                                <li class="nav-item" id="Med">
-                                    <a class="nav-link" href="#">О медцентре</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#">Галерея</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Благодарности</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Лицензии</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="header-style2">
-                    <div class="style2">
-                        <h1 class="h1_title"><strong>prof@dlamed.group</strong></h1>
-                        <h2 class="h2_title">+7 (495) 381 53 33</h2>
-                        <div class="concrDiv">
-                            Ваш город: <div><a style="color: #009FE3";>Королев</a></div>
-                            <iconify-icon id="arrow1" icon="bx:chevron-down" style="color: #009FE3; border: 1px; margin-left: -6px;" width="24"; height=24";></iconify-icon>
-                        </div>
-                    </div>
-
-
-                </div>
-            </header>
+    <div class="header-main1_adapt">
+        <div class="header-block1"><img class="image-block1" src="img/image 21.png"></div>
+        <div class="header-block1_5"><h2>+7 (495) 381 53 33</h2></div>
+        <div class="header-block2"></div>
+        <div class="header-block3">Медицинские профосмотры <br>в Москве и области</div>
+        <div class="burger">
+            <button class='nav-toggle' id='nav_toggle' type='button'>
+                <span class='nav-toggle__item'>Menu</span>
+            </button>
         </div>
-    </header>
+    </div>
+</div>
+    <div class="container">
+        <header class="header-style">
+            <div class="header-style1">
+                <div class="header-main1">
+                    <div class="header-block1"><img class="image-block1" src="img/image 21.png"></div>
+                    <div class="header-block1_5"><h2>+7 (495) 381 53 33</h2></div>
+                    <div class="header-block2"></div>
+                    <div class="header-block3">Медицинские профосмотры <br>в Москве и области</div>
+                </div>
+                <div class="header-main2">
+                    <nav class="navbar">
+                        <ul class="navbar-nav1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Подбор профосмотра <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="btn" style="display: flex; margin-top: 9px;">
+                                    Услуги
+                                    <div style="margin-top: -4px;">
+                                        <iconify-icon id="arrow" icon="bx:chevron-down" style="color: #b1b1b1; border: 1px; margin-left: 2px;" width="24"; height=24";></iconify-icon>
+                                    </div>
+
+                                </a>
+                                <div class="dropdown" id="dropdown" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Предварительные и периодические медицинские осмотры (профосмотры)</a>
+                                    <a class="dropdown-item" href="#">Личные медицинские книжки (ЛМК)</a>
+                                    <a class="dropdown-item" href="#">Психиатрическое освидетельствование</a>
+                                    <a class="dropdown-item" href="#">Предрейсовые/послерейсовые медицинские осмотры</a>
+                                    <a class="dropdown-item" href="#">Предсменные/послесменные медицинские осмотры</a>
+                                    <a class="dropdown-item" href="#">Организация здравпункта на предприятии</a>
+                                    <a class="dropdown-item" href="#">Диспансеризация</a>
+                                    <a class="dropdown-item" href="#">Вакцинация</a>
+                                    <a class="dropdown-item" href="#">Помощь в организации аттестации рабочих мест (СОУТ)</a>
+                                    <a class="dropdown-item" href="#">Тендерный отдел</a>
+                                    <div class="dropdown-divider"></div>
+                                </div>
+                            </li>
+                            <li class="nav-item" id="Med">
+                                <a class="nav-link" href="#">О медцентре</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Галерея</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Благодарности</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лицензии</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav" id="nav">
+                            <hr class="line">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"style="margin-bottom: 12px;">prof@dlamed.group </a>
+                            </li>
+                            <li class="nav-item" style="display: flex;">
+                                <a class="nav-link" href="#">Ваш город:</a><a style="color: #009FE3; padding-top: 15px;">Королев</a>
+                                <div style="padding-top: 6px;">
+                                    <iconify-icon icon="bx:chevron-down" style="color: #009FE3; border: 1px; margin-left: -9px; padding-top: 5px;" width="24"; height=24";></iconify-icon>
+                                </div>
+                            </li>
+                            <hr class="line">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Подбор профосмотра <span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn" href="#" id="btn1">
+                                    Услуги
+                                    <iconify-icon id="arrow1" icon="bx:chevron-down" style="color: #b1b1b1; border: 1px; margin-left: -6px;" width="24"; height=24";></iconify-icon>
+                                </a>
+                                <div class="dropdown1" id="dropdown1" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Предварительные и периодические медицинские осмотры (профосмотры)</a>
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Личные медицинские книжки (ЛМК)</a>
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Психиатрическое освидетельствование</a>
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Предрейсовые/послерейсовые медицинские осмотры</a>
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Предсменные/послесменные медицинские осмотры</a>
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Организация здравпункта на предприятии</a>
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Диспансеризация</a>
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Вакцинация</a>
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Помощь в организации аттестации рабочих мест (СОУТ)</a>
+                                    <a class="dropdown-item" style="color: #726F77;" href="">Тендерный отдел</a>
+                                    <div class="dropdown-divider"></div>
+                                </div>
+                            </li>
+                            <li class="nav-item" id="Med1">
+                                <a class="nav-link" href="#">О медцентре</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Галерея</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Благодарности</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Лицензии</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-style2">
+                <div class="style2">
+                    <h1 class="h1_title"><strong>prof@dlamed.group</strong></h1>
+                    <h2 class="h2_title">+7 (495) 381 53 33</h2>
+                    <div class="concrDiv">
+                        Ваш город: <div><a style="color: #009FE3";>Королев</a></div>
+                        <iconify-icon id="arrow1" icon="bx:chevron-down" style="color: #009FE3; border: 1px; margin-left: -6px;" width="24"; height=24";></iconify-icon>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    </div>
     <section class="section1">
         <div class="container">
+            <!-- Модальный -->
+            <div id="myModal" class="modal">
+
+                <!-- Модальное содержание -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="post_text_modal">
+                        Оставьте заявку, и мы предоставим полный план профосмотра с расчетом итоговой стоимости, подходящей именно вашей организации
+                        <div class="text_input">
+                            <input class="holder">
+                            <span class="span_holder" style="left: 9px; top: 18px;">Ваш номер телефона<span>*</span></span>
+                        </div>
+                        <button>Получить коммерческое предложение</button>
+                        <div class="confed">
+                            Передавая информацию сайту, вы принимаете условия
+                            <p style="color: #009FE3; cursor: pointer;">Политика защиты персональной информации</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="center_content">
                 <div class="pre_girl">
                     <div class="pre_girl_text">
@@ -95,15 +178,15 @@
                             <div class="item_img">
                                 <img style="width: 45px; margin-right: -7px; margin-left: -3px;"  alt="" src="img/Group.png">
                             </div>
-                            <div>
+                            <div class="item_txt">
                                 Сделаем за вас все: от подбора типа профосмотра до выдачи всех документов
                             </div>
                         </div>
                         <div class="item">
-                            <div class="item_img">
+                            <div class="item_img img2">
                                 <img alt="" src="img/Frame.png">
                             </div>
-                            <div>
+                            <div class="item_txt">
                                 Работаем строго по 302н Приказу Минздравсоцразвития
                             </div>
                         </div>
@@ -111,11 +194,12 @@
                             <div class="item_img">
                                 <img alt="" src="img/Group%2031.png">
                             </div>
-                            <div>
+                            <div class="item_txt">
                                 Результаты профосмотра всего за 7 дней
                             </div>
                         </div>
                     </div>
+                    <button id="myBtn">Получить коммерческое предложение</button>
                 </div>
                 <div class="girl">
                     <div class="girlImg">
@@ -128,7 +212,7 @@
                         Оставьте заявку, и мы предоставим полный план профосмотра с расчетом итоговой стоимости, подходящей именно вашей организации
                         <div class="text_input">
                             <input class="holder">
-                            <span class="span_holder">Ваш номер телефона<span>*</span></span>
+                            <span class="span_holder" id="span_holder_main" >Ваш номер телефона<span>*</span></span>
                         </div>
                         <button>Получить коммерческое предложение</button>
                         <div class="confed">
@@ -136,10 +220,7 @@
                             <p style="color: #009FE3; cursor: pointer;">Политика защиты персональной информации</p>
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
     </section>
@@ -256,7 +337,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="сontent_item2">
                     <div class="item2_img">
                         <img style="width: 210px; min-height: 350px; height: 100%;"  alt="" src="img/Mask%20Group.png">
@@ -292,7 +372,7 @@
                         <div class="post_text1 second">
                             <div class="text_input">
                                 <input class="holder" placeholder="">
-                                <span class="span_holder second">Ваш номер телефона<span>*</span></span>
+                                <span class="span_holder" id="span_holder_bottom">Ваш номер телефона<span>*</span></span>
                             </div>
                             <button>Получить коммерческое предложение</button>
                             <div class="confed">
@@ -306,7 +386,7 @@
         </div>
     </section>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/javascript.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>

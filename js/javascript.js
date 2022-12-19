@@ -1,4 +1,4 @@
-/* Dropdown menu */
+/* Dropdown menu  main*/
 const dropdownBtn = document.getElementById("btn");
 const dropdownMenu = document.getElementById("dropdown");
 const toggleArrow = document.getElementById("arrow");
@@ -19,6 +19,26 @@ document.documentElement.addEventListener("click", function () {
     }
 });
 
+/* Dropdown menu  adapt*/
+const dropdownBtn1 = document.getElementById("btn1");
+const dropdownMenu1 = document.getElementById("dropdown1");
+const toggleArrow1 = document.getElementById("arrow1");
+
+const toggleDropdown1 = function () {
+    dropdownMenu1.classList.toggle("show1");
+    toggleArrow1.classList.toggle("arrow1");
+};
+
+dropdownBtn1.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleDropdown1();
+});
+
+document.documentElement.addEventListener("click", function () {
+    if (dropdownMenu1.classList.contains("show1")) {
+        toggleDropdown1();
+    }
+});
 /* Slider */
 
 /* Устанавливаем стартовый индекс слайда по умолчанию: */
@@ -45,7 +65,7 @@ function currentSlide(n) {
 function showSlides(n) {
     /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
     let cont_item2 = document.getElementsByClassName("сontent_item2");
-    let min_cont = document.getElementsByClassName("mini_container");
+
     /* Проверяем количество item: */
     if (n > cont_item2.length) {
         slideIndex = 1
@@ -53,20 +73,6 @@ function showSlides(n) {
     if (n < 1) {
         slideIndex = cont_item2.length
     }
-    /* Проверяем количество container */
-    if (n > min_cont.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = min_cont.length
-    }
-
-    /* Проходим по каждому cont в цикле for: */
-    for (let cont of min_cont) {
-        cont.style.display = "none";
-    }
-    /* Делаем элемент flex: */
-    min_cont[slideIndex - 1].style.display = "flex";
 
     /* Проходим по каждому item в цикле for: */
     for (let item of cont_item2) {
@@ -84,4 +90,40 @@ for(let i = 0; i < holder.length; i++){
     holder[i].addEventListener('input', function(){
         span_holder[i].style.display = ( this.value == "" ) ? 'inline' : 'none';
     });
+}
+
+
+/* Menu nav toggle */
+$('#nav_toggle').on('click', function(event) {
+    event.preventDefault();
+
+    $(this).toggleClass('active'),
+        $('#nav').toggleClass('active');
+});
+
+
+// Получить модальный
+var modal = document.getElementById("myModal");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn");
+
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
